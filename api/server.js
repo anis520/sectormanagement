@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(
   cors({
-    origin: "https://test-task-beryl.vercel.app",
+    origin: "https://sectormanagement.vercel.app",
 
     credentials: true,
     optionsSuccessStatus: 200,

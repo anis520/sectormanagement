@@ -4,7 +4,7 @@ import axios from "axios";
 export const addSector = createAsyncThunk("user/addSector", async (data) => {
   try {
     const response = await axios.post(
-      `https://testapi-l049.onrender.com/api/v1/user/`,
+      `https://sectormanagment.onrender.com/api/v1/user/`,
       data
     );
     return response;
@@ -16,7 +16,7 @@ export const addSector = createAsyncThunk("user/addSector", async (data) => {
 export const getSector = createAsyncThunk("user/getSector", async () => {
   try {
     const response = await axios.get(
-      `https://testapi-l049.onrender.com/api/v1/user/`,
+      `https://sectormanagment.onrender.com/api/v1/user/`,
 
       {
         withCredentials: true,
@@ -33,7 +33,7 @@ export const deleteSector = createAsyncThunk(
   async (id) => {
     try {
       const response = await axios.delete(
-        `https://testapi-l049.onrender.com/api/v1/user/${id}`,
+        `https://sectormanagment.onrender.com/api/v1/user/${id}`,
 
         { withCredentials: true }
       );
@@ -48,7 +48,7 @@ export const updateSector = createAsyncThunk(
   async (data) => {
     try {
       const response = await axios.put(
-        `https://testapi-l049.onrender.com/api/v1/user`,
+        `https://sectormanagment.onrender.com/api/v1/user`,
         data,
 
         { withCredentials: true }
