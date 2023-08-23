@@ -212,6 +212,11 @@ const FieldCom = ({ show, setshow, title }) => {
       );
 
       setshow(!show);
+      setSelectedSector("");
+      setSelectedSubsector("");
+      setselectedMicroSubsector("");
+      setname("");
+      setagree(false);
       CreateTost("success", "Create data ");
     }
   };
